@@ -14,7 +14,7 @@ public class Main {
         //While the thread is blocked: ( .get(): main thread waits until it gets the result
         //      It cannot proceed to execute other tasks.
         //      It essentially pauses at that point in the code, waiting for the result.
-        int randomNo= fi.get(10, TimeUnit.SECONDS);
+        int randomNo= fi.get();
         System.out.println("Rando: "+ randomNo);
         es.shutdown();
     }
