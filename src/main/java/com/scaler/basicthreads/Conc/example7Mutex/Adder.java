@@ -17,7 +17,7 @@ public class Adder implements  Runnable{
         for( int i=0; i<100000; i++ ){
             lock.lock();
             this.count.num+=1;
-            lock.unlock();
+
         }
     }
 }
