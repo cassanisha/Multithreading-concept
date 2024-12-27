@@ -1,4 +1,4 @@
-package com.scaler.basicthreads.Conc.example4ExeSer;
+package com.scaler.basicthreads.Conc.example4Runnable;
 
 public class NumberPrinter implements Runnable{
     @Override

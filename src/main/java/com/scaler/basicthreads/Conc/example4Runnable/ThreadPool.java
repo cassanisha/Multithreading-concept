@@ -1,4 +1,4 @@
-package com.scaler.basicthreads.Conc.example4ExeSer;
+package com.scaler.basicthreads.Conc.example4Runnable;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
