@@ -1,15 +1,15 @@
 package com.scaler.basicthreads.Conc.example8synchronized;
 
-import java.util.concurrent.locks.Lock;
 
 public class Adder implements  Runnable{
-    Count count;
+    final Count count;
 
 
     public Adder(Count count){
         this.count=count;
 
     }
+
 
     @Override
     public void run() {
@@ -21,4 +21,4 @@ public class Adder implements  Runnable{
         }
         System.out.println("Adder Finished");
     }
-}
+};
