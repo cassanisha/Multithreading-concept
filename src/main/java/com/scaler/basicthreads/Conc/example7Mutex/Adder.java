@@ -14,10 +14,12 @@ public class Adder implements  Runnable{
 
     @Override
     public void run() {
+        System.out.println("Adder Started");
         for( int i=0; i<100000; i++ ){
             lock.lock();
             this.count.num+=1;
-
+            lock.unlock();
         }
+        System.out.println("Adder Finished");
     }
 }

@@ -12,10 +12,12 @@ public class Subtractor implements  Runnable{
 
     @Override
     public void run() {
+        System.out.println("Subtractor started");
         for( int i=0; i<100000; i++ ){
             lock.lock();
             this.count.num-=1;
             lock.unlock();
         }
+        System.out.println("Subtractor finished");
     }
 }
